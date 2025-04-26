@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 50px; 
+    height: 100vh;
+    background-color: #ffe6e6; 
+  }
+  
+  .image {
+    width: 150px; /* Kích thước ảnh */
+    height: 150px;
+    object-fit: cover; /* Tự động điều chỉnh ảnh */
+    border-radius: 50%; /* Làm ảnh tròn */
+    border: 2px solid #ff9999; /* Viền màu hồng */
+    margin: 0 10px; /* Khoảng cách ảnh với các phần tử khác */
+  }
+ 
+  .heart {
+    margin: 0 5px; /* Khoảng cách ngang giữa trái tim và ảnh */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    animation: pulse 1s infinite; /* Hiệu ứng nhịp đập */
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+
+  .heart::after {
+    top: 0;
+    left: 50px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(-45deg);
+    }
+    100% {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+  
+
+
+.title{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
