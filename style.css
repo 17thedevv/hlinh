@@ -19,8 +19,8 @@
   .heart {
     margin: 0 5px; /* Khoảng cách ngang giữa trái tim và ảnh */
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100px;
+    height: 100px;
     background-color: red;
     transform: rotate(-45deg);
     animation: pulse 1s infinite; /* Hiệu ứng nhịp đập */
@@ -30,8 +30,8 @@
   .heart::after {
     content: "";
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100px;
+    height: 100px;
     background-color: red;
     border-radius: 50%;
   }
